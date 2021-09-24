@@ -1,0 +1,40 @@
+<!--
+// InjectJS
+// https://github.com/wdg/InjectJS
+//
+// Licence MIT.
+// See: Licence.md
+//
+// Safari Extension (Sext).
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="popup.css">
+                    <script type="Text/Javascript" src="shared.js"></script>
+                    <script type="module" src="popup.js"></script>
+                </head>
+    <body>
+        <h2>🌍 Javascript Inject</h2>
+
+        <div class="cell only warning">
+            <span>⚠️ Warning</span>
+            <span>We are not running as a extension!</span>
+        </div>
+
+        <div class="cell first">
+<textarea spellcheck="false" class="fullWidth" id="inject" rows="15">
+domain("wdgwv.(com|nl)", function() {
+     // .. run this
+})
+</textarea>
+        </div>
+        <div class="cell last">
+            <span class="hidden">Automatically</span>
+            <input type="checkbox" class="uiswitch custom hidden" id="autoinject">
+        </div>
+        <p class="cell-description">If saved InjectJS will inject this script on <strong>all</strong> pages.</p>
+    </body>
+</html>
