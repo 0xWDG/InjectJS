@@ -4,7 +4,7 @@
 // Licence MIT.
 // See: Licence.md
 //
-// Safari Extension (Sext).
+// Safari Extension (Safari Test Extension / STE).
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log("Received request: ", request);
