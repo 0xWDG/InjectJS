@@ -15,14 +15,7 @@ window.addEventListener("DOMContentLoaded", function (e) {
 
     var el = document.createElement("script")
     el.type = "text/Javascript"
-    el.innerText = `function domain(domainName, runFunc) {
-        const re = new RegExp(domainName);
-        if (location.href.match(re) !== null) {
-            if (typeof runFunc === 'function') {
-                runFunc()
-            }
-        }
-    }`
+    el.innerText = "function domain(domainName,runFunc){const re=new RegExp(domainName);if(location.href.match(re)!==null){if(typeof runFunc==='function'){runFunc()}}}"
 
     document.getElementsByTagName('head')[0].appendChild(el);
 
